@@ -135,6 +135,7 @@ public class Demo02 {
 		exquery(getIndexSearcher(), query);
 		
 	}
+
 	@Test
 	public void query3() throws ParseException, IOException{//不支持数字类型
 		String[] fields = {"name","fileContent"};
@@ -145,7 +146,12 @@ public class Demo02 {
 		System.out.println(query);
 		//执行查询
 		exquery(getIndexSearcher(), query);
-		
+	}
+
+	private void syso() {
+		// TODO Auto-generated method stub
+
+
 	}
 
 }

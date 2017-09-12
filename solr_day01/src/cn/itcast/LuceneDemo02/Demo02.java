@@ -135,5 +135,17 @@ public class Demo02 {
 		exquery(getIndexSearcher(), query);
 		
 	}
+	@Test
+	public void query3() throws ParseException, IOException{//不支持数字类型
+		String[] fields = {"name","fileContent"};
+		//创建一MultiFiledQuerParser对象，指定多个默认搜索域
+		MultiFieldQueryParser queryParser = new MultiFieldQueryParser(fields, new IKAnalyzer());
+		//使用parser方法创建Query对象
+		Query query = queryParser.parse("lucene是apache旗下的一个开源的全文检索工具包");
+		System.out.println(query);
+		//执行查询
+		exquery(getIndexSearcher(), query);
+		
+	}
 
 }
