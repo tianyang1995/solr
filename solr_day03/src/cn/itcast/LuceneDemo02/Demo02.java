@@ -135,5 +135,9 @@ public class Demo02 {
 		exquery(getIndexSearcher(), query);
 		
 	}
+	private void syso() {
+		// TODO Auto-generated method stub
+
+	}
 
 }
